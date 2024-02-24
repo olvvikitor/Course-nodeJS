@@ -1,13 +1,13 @@
 const HomeModel = require('../models/HomeModel');
-
+/*
 HomeModel.create({
-    titulo:req.clinte,
+    titulo:'Um titulo de testes',
     descricao: 'Uma descricao de testes.'
 }).then(dados => console.log(dados)).catch(e => console.log(e));
+*/
 
 // Controlador para renderizar a página inicial
 exports.paginaInicial = (req, res, next) => {
-
     console.log('respondendo cliente'); // Mensagem de log indicando que o servidor está respondendo ao cliente
     res.render('index'); // Renderiza a página index
     console.log("EU ESTOU AQUI homeCOntroller.paginaInicial"); // Mensagem de log para indicar a execução desta função
